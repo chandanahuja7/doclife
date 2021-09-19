@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+
+    <!-- slick CSS -->
+    <link rel = "stylesheet" href = "slick-1.8.1/slick/slick.css">
+    <link rel = "stylesheet" href = "slick-1.8.1/slick/slick-theme.css">
+    <!-- aos -->
+    <link rel = "stylesheet" href = "aos-master/dist/aos.css">
+        <!-- Custom CSS file -->
+        <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    
+    <!-- navbar -->
+    <nav class = "navbar fixed">
+      <div class = "container">
+        <div class = "brand-and-icon">
+          <div class = "brand-name">
+            <a href = "index.html">
+              <span class = "flex">
+                <!--<i class = "fab fa-buffer"></i>-->
+                <img src="images/dl_logo.png"  height="80px"></img>
+
+                 DOCLIFE
+              </span>
+            </a>
+          </div>
+          <div class = "nav-toggler">
+            <span>
+              <i class = "fas fa-bars"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- nav menu -->
+        <div class = "navbar-collapse">
+          <ul class = "navbar-nav">
+            <li><a href = "#home">Home</a></li>
+            <li><a href = "#about-us">About Us</a></li>
+            <li><a href = "#services1">Products</a></li>
+            <li><a href = "#contact-us">Contact Us</a></li>
+          </ul>
+
+          <span id = "cancel-btn">
+            <i class = "fas fa-times"></i>
+          </span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- header -->
+    <header class = "header" id = "home">
+      <div class = "container">
+        <div class = "header-content">
+          <div class = "banner-text">
+            <h1>Your <span>Partners</span> in Healthcare!</h1>
+            <a href = "#services1" ><button class = "btn" href = "#services1" >Our Products</button></a>
+            <a href = "resources/doclife_brochure.pdf" ><button class = "btn" href = "#services1" >Download Product-List</button></a>
+            <p class = "lead">Together, we deliver the Uber quality products.</p>
+          </div>
+          <div class = "banner-image">
+            <img src = "images/banner.jpeg" alt="banner image" >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- about us -->
+    <section id = "about-us">
+      <div class = "container">
+        <!-- title -->
+        <div class = "title-content">
+          <h2 class = "title">About Us</h2>
+          <p class = "lead">Doclife Pharmaceuticals is a professionally run Pharmaceutical Company with Quality-consciousness at its core.
+            <br/> Based in Mumbai & Ghaziabad, we align with our partners pan-india, to strive for perfection in our products and services. 
+
+          </p>
+        </div>
+        <!-- end of title -->
+
+        <div class = "about-content" id = "about-1">
+          <div class = "about-right" data-aos = "fade-left">
+            <img src = "images/IMG-20210917-WA0001.jpg">
+          </div>
+
+          <div class = "about-left">
+            <h2 class = "display-text">Vision, Values & Mission</h2>
+            <p class = "lead"> Led by team of highly experienced professionals from Pharmaceutical Industry, we are constantly guided by our values and driven by our Vision and dreams.</p>
+            <div class = "about-list">
+             <div class = "about-item">
+                <span><i class = "fas fa-image"></i></span>
+                <div>
+                  <h3 class = "heading">Vision</h3>
+                  <p class = "lead"> To offer best-of-breed Pharma-Products to Customers with highest customer-service and quality Standards.
+                  </p>
+                </div>
+              </div>
+              <div class = "about-item">
+                <span><i class = "fas fa-suitcase"></i></span>
+                <div>
+                  <h3 class = "heading">Values</h3>
+                <ul style="list-style-type: disc;">
+                      <li> Committment to build trusted relationship with partners and Customers </li>
+                      <li> Constant Spirit of Innovation </li>
+                      <li> Paramount focus on Customer Health and Wellbeing  </li>
+                      <li> Sustainable and ethical business practices  </li>
+                    </ul>
+                </div>
+              </div>       
+              <div class = "about-item">
+                <span><i class="fas fa-bullseye"></i></span>
+                <div>
+                  <h3 class = "heading">Mission</h3>
+                  <p class = "lead"> Consistently deliver Innovative and top-quality Pharma products as needed by our customers and partners, at affordable prices.   </p>
+                </div>
+              </div>                          
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+    
+
+    <!-- services -->
+    <section id = "services1">
+      <div class = "container">
+        <div class = "services-content">
+          <!-- title -->
+          <div class = "title-content">
+            <h2 class = "title">Products</h2>
+            <p class = "lead">Meticulously devised Products, with no compromise on quality.</p>
+          </div>
+          <!-- end of title  -->
+
+          <div class ="services-list">
+            
+<!--Docsartan:begin -->
+              <div class = "service-item" data-aos = "flip-left">
+                <a href="#docsartan" rel="modal:open">
+                <img  style="width:100%;"  class="small-prod-image" src="images/products/docsartan.png"> </img>
+                <p class="view-more">View Details</p>
+              </a>
+              </div>
+              <!-- Modal HTML embedded directly into document -->
+              <div id="docsartan" class="modal mymodal">
+                  <img  class="img-responsive-ht" src="images/products/docsartan_modal.png"> </img>
+              </div>
+<!--Docsartan:End -->
+
+
+            
+<!--Docsartan-am:begin -->
+<div class = "service-item" data-aos = "flip-left">  
+  <a href="#docsartan-am" rel="modal:open">
+  <img class="small-prod-image" src="images/products/docsartan-am.png"> </img>
+  <p class="view-more">View Details</p>
+</a>
+</div>
+<!-- Modal HTML embedded directly into document -->
+<div id="docsartan-am" class="modal mymodal">
+    <img class="img-responsive-ht" src="images/products/docsartan-am_modal.png"> </img>
+
+</div>
+<!--Docsartan:End -->
+
+<!--Docsartan-am:begin -->
+<div class = "service-item" data-aos = "flip-left">  
+  <a href="#docsartan-ct" rel="modal:open">
+  <img class="small-prod-image" src="images/products/docsartan-ct.png"> </img>
+  <p class="view-more">View Details</p>
+                                                     
+</a>
+</div>
+<!-- Modal HTML embedded directly into document -->
+<div id="docsartan-ct" class="modal mymodal">
+    <img class="img-responsive-ht" src="images/products/docsartan-ct_modal.png"> </img>
+</div>
+<!--Docsartan:End -->
+
+
+<!--docfax-m:begin -->
+<div class = "service-item" data-aos = "flip-left">  
+  <a href="#docfax-m" rel="modal:open">
+  <img class="small-prod-image" src="images/products/docfax-m.png"> </img>
+  <p class="view-more">View Details</p>
+                                                     
+</a>
+</div>
+<!-- Modal HTML embedded directly into document -->
+<div id="docfax-m" class="modal mymodal">
+    <img class="img-responsive-ht" src="images/products/docfax-m_modal.png"> </img>
+</div>
+<!--docfax-m:End -->
+
+
+<!--docmin-cal:begin -->
+<div class = "service-item" data-aos = "flip-left">  
+  <a href="#docmin-cal" rel="modal:open">
+  <img class="small-prod-image" src="images/products/docmin-cal.png"> </img>
+  <p class="view-more">View Details</p>
+                                                     
+</a>
+</div>
+<!-- Modal HTML embedded directly into document -->
+<div id="docmin-cal" class="modal mymodal">
+    <img class="img-responsive-ht" src="images/products/docmin-cal_modal.png"> </img>
+</div>
+<!--docmin-cal:End -->
+
+<!--docmin-d:begin -->
+<div class = "service-item" data-aos = "flip-left">  
+  <a href="#docmin-d" rel="modal:open">
+  <img class="small-prod-image" src="images/products/docmin-d.png"> </img>
+  <p class="view-more">View Details</p>
+                                                     
+</a>
+</div>
+<!-- Modal HTML embedded directly into document -->
+<div id="docmin-d" class="modal mymodal">
+    <img class="img-responsive-ht" src="images/products/docmin-d_modal.png"> </img>
+</div>
+<!--docmin-d:End -->
+
+<!--docliv-300:begin -->
+<div class = "service-item" data-aos = "flip-left">  
+  <a href="#docliv-300" rel="modal:open">
+  <img class="small-prod-image" src="images/products/docliv-300.png"> </img>
+  <p class="view-more">View Details</p>
+                                             
+</a>
+</div>
+<!-- Modal HTML embedded directly into document -->
+<div id="docliv-300" class="modal mymodal">
+    <img class="img-responsive-ht" src="images/products/docliv-300_modal.png"> </img>
+</div>
+<!--docmin-d:End -->
+
+<!--docnida:begin -->
+<div class = "service-item" data-aos = "flip-left">  
+  <a href="#docnida" rel="modal:open">
+  <img class="small-prod-image" src="images/products/docnida.png"> </img>
+  <p class="view-more">View Details</p>
+                                                   
+</a>
+</div>
+<!-- Modal HTML embedded directly into document -->
+<div id="docnida" class="modal mymodal">
+    <img class="img-responsive-ht" src="images/products/docnida_modal.png"> </img>
+</div>
+<!--docnida:End -->
+
+
+
+<!--Doc-CV:begin -->
+<div class = "service-item" data-aos = "flip-left">
+  <a href="#doccefcv" rel="modal:open">
+  <img class="small-prod-image" srcset="images/products/doccef-cv.png 2x"  src="images/products/doccef-cv.png"> </img>
+  <p class="view-more">View Details</p>
+</a>
+</div>
+<!-- Modal HTML embedded directly into document -->
+<div id="doccefcv" class="modal mymodal">
+    <img class="img-responsive-ht" src="images/products/doccef-cv_modal.png"> </img>
+</div>
+<!--Doc-CV:End -->
+
+<!--panzydoc-dsr:begin -->
+<div class = "service-item" data-aos = "flip-left">  
+  <a href="#panzydoc-dsr" rel="modal:open">
+  <img class="small-prod-image" src="images/products/panzydoc-dsr.png"> </img>
+  <p class="view-more">View Details</p>
+</a>
+</div>
+<!-- Modal HTML embedded directly into document -->
+<div id="panzydoc-dsr" class="modal mymodal">
+    <img class="img-responsive-ht" src="images/products/panzydoc-dsr_modal.png"> </img>
+</div>
+<!--panzydoc-dsr:End -->
+
+<!--panzydoc-40:begin -->
+<div class = "service-item" data-aos = "flip-left">  
+  <a href="#panzydoc-40" rel="modal:open">
+  <img class="small-prod-image" src="images/products/panzydoc-40.png"> </img>
+  <p class="view-more">View Details</p>
+                                            
+</a>
+</div>
+<!-- Modal HTML embedded directly into document -->
+<div id="panzydoc-40" class="modal mymodal">
+    <img class="img-responsive-ht" src="images/products/panzydoc-40.png"> </img>
+</div>
+<!--panzydoc-40:End -->
+
+
+<!--itradoc-200:begin -->
+<div class = "service-item" data-aos = "flip-left">  
+  <a href="#itradoc-200" rel="modal:open">
+  <img class="small-prod-image" src="images/products/itradoc-200.png"> </img>
+  <p class="view-more">View Details</p>
+</a>
+</div>
+<!-- Modal HTML embedded directly into document -->
+<div id="itradoc-200" class="modal mymodal">
+    <img class="img-responsive-ht" src="images/products/itradoc-200_modal.png"> </img>
+</div>
+<!--itradoc-200:End -->
+
+
+
+<!--Empty:begin -->
+<div >  
+  
+</div>
+<!--Empty:End -->
+
+
+
+
+<!--doctam:begin -->
+<div class = "service-item" data-aos = "flip-left">  
+  <a href="#doctam" rel="modal:open">
+  <img class="small-prod-image" src="images/products/doctam.png"> </img>
+  <p class="view-more">View Details</p>
+                                                     
+</a>
+</div>
+<!-- Modal HTML embedded directly into document -->
+<div id="doctam" class="modal mymodal">
+    <img class="img-responsive-ht" src="images/products/doctam_modal.png"> </img>
+</div>
+<!--doctam:End -->
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+
+
+   <!-- contact us -->
+    <section id = "contact-us">
+      <div class = "contact-content">
+        <div class = "title-content">
+          <h2 class = "title">Our Contact</h2>
+        </div>
+        <div class = "contact-wrapper">
+          <div class = "location-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.591895249745!2d73.07745021490267!3d19.16933328703439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDEwJzA5LjYiTiA3M8KwMDQnNDYuNyJF!5e0!3m2!1sen!2sin!4v1631857654172!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+          <div class = "contact-form">
+            <div class = "contact-info">
+              <div>
+                <span><i class = "fas fa-map-marker-alt"></i></span>
+                <span>Dombivali East, Thane, Mumbai, India</span>
+              </div>
+              <div>
+                <span><i class = "fas fa-envelope"></i></span>
+                <span>Info@doclifepharma.com</span>
+              </div>
+              <div>
+                <span><i class = "fas fa-phone"></i></span>
+                <span>+91-9212742127</span>
+              </div>
+
+              <div>
+                <span><i class="fas fa-briefcase"></i></span>
+                <span>Monday To Friday <br/> 10.00 AM – 06.00 PM</span>
+              </div>
+              
+            </div>
+  
+            <form class = "main-form">
+              <div>
+                <input type = "text" placeholder="Your Name">
+                <input type = "email" placeholder="Your Email">
+              </div>
+              <input type = "text" placeholder="Subject">
+              <textarea placeholder="Message" rows = "5"></textarea>
+              <button type = "submit" class = "btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class = "footer">
+      <div class = "container">
+        <div class = "footer-content">
+
+
+          <div class = "footer-div2">
+            <h3 class = "heading">USEFUL LINKS</h3>
+            <a href = "#home">Home</a>
+            <a href = "#about-us">About Us</a>
+            <a href = "#services1">Products</a>
+            <a href = "#services1">Business Inquiry</a>
+            <a href = "#contact-us">Contact Us</a>
+          </div>
+
+
+          
+
+
+
+          <div class = "footer-div3" >
+            <h3 class = "heading">CONTACT US</h3>
+            <span>
+              203, Shri Apartment Kolegaon, Near Katai Naka,<br>
+              Badlapur Road, Dombivali East, Thane, Mumbai, 421204, India <br>
+              Phone: +91-9212742127 <br>
+              Email: Info@doclifepharma.com
+            </span>
+            <ul class = "social-icons">
+              <li class = "flex"><i class = "fab fa-twitter"></i></li>
+              <li class = "flex"><i class = "fab fa-facebook"></i></li>
+              <li class = "flex"><i class = "fab fa-instagram"></i></li>
+              <li class = "flex"><i class = "fab fa-linkedin"></i></li>
+              <li class = "flex"><i class = "fas fa-envelope"></i></li>
+            </ul>
+          </div>
+    
+
+
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- Slick Slider -->
+    <script src = "slick-1.8.1/slick/slick.min.js"></script>
+    <!-- aos -->
+    <script src = "aos-master/dist/aos.js"></script>
+    <!-- numscroller -->
+    <script src = "js/numscroller-1.0.js"></script>
+    <!-- Custom JS file -->
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
